@@ -1,0 +1,44 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[includeheadfoot,margin=2.5cm]{geometry}
+
+\usepackage{times}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+
+\usepackage{csquotes}
+\usepackage{abbrevs}
+\usepackage[authordate,bibencoding=auto,strict,noibid,backend=biber]{biblatex-chicago}
+\bibliography{Bibliography}
+
+% change language settings here "ngerman", "english"
+\usepackage[english]{babel}
+
+\include{_Configuration}
+
+\title{\titlename}
+
+\author{ \authorname\\ \scriptsize \authormail \\ \scriptsize \address }
+
+\date{\exposedate}
+
+\begin{document}
+
+\maketitle
+
+\input{concept}
+
+\input{outline}
+
+% nocite print the whole bibliography. Remove nocite to
+% print only the cited references.
+\nocite{*}
+\printbibliography
+
+% section* means that there will be no section numbering
+\input{schedule}
+
+\section*{Supervisor}
+
+\supervisor
+
+\end{document}

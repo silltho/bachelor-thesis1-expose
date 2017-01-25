@@ -1,0 +1,48 @@
+\section*{Concept}
+Continuous Integration (CI) is an often used concept to guaranty code quality in the software development process. Since available literature about this Topic is often very specific to a certain implementation, I want to give a brief overview about Continuous Integration in this paper.
+
+\bigskip
+
+\noindent I choose this topic for my bachelor thesis 1, because at my previous work place, I already tried to implement Continuous Integration into the software development process. We integrated some CI concepts such as "build after every commit" and "automated test on every build" and although it was an very decent implementation we clearly got some benefits from it.
+
+\subsection*{Introduction}
+
+\subsubsection*{Continuous Integration}
+
+\textcite{Humble2010} describe that in many software projects during the development process the application is not in a working state for long periods of time. The reason is easy to understand: Nobody is interested in trying to run the whole application until it is finished. The goal of Continuous Integration is that the software is in a working state all the time.
+
+After long coding sessions the integration step gets unpredictable and can easily take more time than the original programming. ``The longer you wait to integrate, the more it costs and the more unpredictable the cost becomes.'' \autocite{Beck2004}
+
+\begin{quote}
+``As with other Extreme Programming practices, the idea behind Continuous Integration was that if regular integration of your codebase is good, why not do it all the time? In this context of integration, "all the time" means every single time somebody commits any change to the version control.'' \autocite{Beck2004}
+\end{quote}
+
+\bigskip
+
+\noindent There is plenty more literature which validates the benefits of an implementation through conducting case studies. This thesis will include some of their findings. \textcite{Stahl2013} try to validate the benefits of Continuous Integration in following aspects: ``increased developer productivity, increased project predictability, improved communication and enabling agile testing.'' The study involves four independent products and in each of these products they interviewed developers, testers, project managers and line managers. Their experiences of Continuous Integration are discussed in comparison to the benefits proposed in related work. 
+They concluded that CI has not only one, but several benefits and each of their four predicted hypotheses are at least supported by the gathered data.
+ 
+\subsubsection*{Continuous Delivery}
+
+While Continuous Integration mostly describes how to develop new software with having a runnable version of the current project state all the time, Continuous Delivery (CD) goes a small step further. 
+
+\begin{quote}
+``Often software professionals face the same problem: If somebody thinks of an good idea how to deliver it to the customer as fast as possible?''  \autocite{Humble2010}
+\end{quote}
+
+\noindent With the implementation of CD project teams automate from the development to the delivery process as much as possible, to shortage the release cycle to the customer.
+ 
+\subsection*{Tools}
+One aspect of CI and CD is to automate the building, testing and deploying process as much as possible, also managing dependencies and configurations can be a challenging part. \textcite{Humble2010} describe the process for getting software from version control into the hands of the users as deployment pipeline. It includes version control, build, unit tests, automated acceptance tests and release. This thesis will address several Tools that help software developers to automate the deployment pipeline.
+ 
+\subsection*{Practices}
+\textcite{Humble2010} describe that the automation in the tools section exists within an environment of human processes. 
+
+\begin{quote}
+``Continuous Integration is a practice, not a tool and it effectiveness depends upon the developers discipline. The objective of an CI system is to ensure that the software is working, all of the time.'' \autocite{Humble2010}
+\end{quote}
+
+\noindent In order to ensure that this is the case, \textcite{Humble2010} and other literature provide suggested practices. This thesis will include and describe several of these.
+
+\subsection*{Result}
+This paper will collect the tools and practices from different literature and give a overview about possible components of a CI implementation. The information is gathered from previous papers to this topic, and grouped together in the same context. The included tools and practices are described and supply a basis for software developer, who already got some experience with CI and want to get an brief overview about concepts that they can conduct into their development process.
